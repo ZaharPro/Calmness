@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.calmness.R
 
 class HoroscopeFragment : Fragment() {
-    lateinit var browser: WebView
+    private lateinit var browser: WebView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

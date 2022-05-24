@@ -52,8 +52,8 @@ class ProfileFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(ViewModel::class.java)
         viewModel.getUser()
-        viewModel.takeUser().observe(viewLifecycleOwner, {
-            var user: User = it
+        viewModel.takeUser().observe(viewLifecycleOwner) {
+            val user: User = it
             name.setText(user.name)
             email.setText(user.email)
             age.setText(user.age)
@@ -66,7 +66,7 @@ class ProfileFragment : Fragment() {
                 .centerCrop()
                 .override(350, 350)
                 .into(avatar)
-        })
+        }
     }
 
 

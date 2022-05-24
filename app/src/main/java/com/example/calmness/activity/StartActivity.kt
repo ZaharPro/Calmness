@@ -15,10 +15,10 @@ import com.google.firebase.ktx.Firebase
 
 class StartActivity : AppCompatActivity() {
 
-    lateinit var btSign: Button
-    lateinit var editEmail: EditText
-    lateinit var editPassword: EditText
-    lateinit var tvReg: TextView
+    private lateinit var btSign: Button
+    private lateinit var editEmail: EditText
+    private lateinit var editPassword: EditText
+    private lateinit var tvReg: TextView
     private lateinit var auth: FirebaseAuth;
 
     override fun onCreate(savedInstanceState: Bundle?) {
